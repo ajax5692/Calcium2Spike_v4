@@ -3,8 +3,7 @@ function callback_SpecifySaveLocation_C2S(hO, ed)
 figureCalcium2Spike_GUI = ancestor(hO,'figure');      % get figure that owns guidata
 d = guidata(hO);
 
-saveDirectory = uigetdir('C:\Users\abhrajyoti.chakrabarti\Desktop\testNewGUI\',...
-    'Please specify location where to save the results');
+saveDirectory = uigetdir('Please specify location where to save the results');
 
 try
     if saveDirectory ~= 0

@@ -3,8 +3,7 @@ function callback_SelectMEScFile_C2S(hO, ed)
 figureCalcium2Spike_GUI = ancestor(hO,'figure');      % get figure that owns guidata
 d = guidata(hO);
 
-[mescDataName, mescDataLocation] = uigetfile('*.mesc','Please select the MESc file',...
-    'C:\Users\abhrajyoti.chakrabarti\Desktop\testNewGUI\');
+[mescDataName, mescDataLocation] = uigetfile('*.mesc','Please select the MESc file');
 
 if mescDataName ~= 0
     d.mescDataName = mescDataName;

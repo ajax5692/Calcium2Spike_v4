@@ -13,7 +13,7 @@ try
     loadingGraphics.Position = [820 434 30 30];
     pause(0.5)
 
-    [fileName, FallDataLocation] = uigetfile('*.mat','Please select the correct Fall.mat file','C:\Users\abhrajyoti.chakrabarti\Desktop\testNewGUI\');
+    [fileName, FallDataLocation] = uigetfile('*.mat','Please select the correct Fall.mat file');
 
     %check if correct file loaded
     if isfield(load(strcat(FallDataLocation,fileName)), 'F') == 0
