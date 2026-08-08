@@ -102,7 +102,7 @@ try
                 'ForegroundColor',[0.21 0.70 0.21]);
             % - update Fall params space card
             %no. of ROIs
-            neuronsDetectedInSuite2p = sum(tempVar.isCell(:,1));
+            neuronsDetectedInSuite2p = sum(tempVar.iscell(:,1));
             childrenArray = GUI_childrenFinder_C2S(d,'Fall.mat Params','FallROInumTB');
             set(d.source.Children(childrenArray(1)).Children(childrenArray(2)), 'String', ...
                 strcat('No. of ROIs detected:',{' '},num2str(neuronsDetectedInSuite2p)));
